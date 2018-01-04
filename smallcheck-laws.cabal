@@ -26,7 +26,7 @@ library
                        Test.SmallCheck.Laws.Functor,
                        Test.SmallCheck.Laws.Monad,
                        Test.SmallCheck.Laws.Monoid
-  build-depends:       base >=4.6 && <4.10,
+  build-depends:       base >=4.6 && <=4.10.1.0,
                        smallcheck >=1.1.1,
                        smallcheck-series >=0.3
   if impl(ghc < 7.10)

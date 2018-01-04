@@ -1,0 +1,8 @@
+flags: {}
+packages:
+- '.'
+- location:
+    git: git@github.com:Simspace/smallcheck-series.git
+    commit: 9fa55294c88f98c7fe4991d85993bb81042d440e
+  extra-dep: true
+resolver: lts-10.2
