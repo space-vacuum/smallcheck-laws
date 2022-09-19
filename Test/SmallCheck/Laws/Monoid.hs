@@ -17,7 +17,10 @@ import Prelude hiding (mconcat)
 import Data.Monoid (Monoid, mappend, mempty)
 import Data.Traversable (sequenceA)
 #endif
+#if MIN_VERSION_base(4,11,0)
+#else
 import Data.Monoid ((<>))
+#endif
 import qualified Data.Monoid as Monoid (mconcat)
 import Test.SmallCheck (Property, over)
 import Test.SmallCheck.Series (Series)
